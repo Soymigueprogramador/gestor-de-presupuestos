@@ -36,8 +36,9 @@ const App = () => {
   return (
     <>
       <h1>Gestor de Presupuestos</h1>
-      <form onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         <input
+          className='campos'
           type="text"
           name="nombre"
           placeholder="Nombre del gasto"
@@ -45,6 +46,7 @@ const App = () => {
           onChange={handleChange}
         />
         <input
+          className='campos'
           type="number"
           name="cantidad"
           placeholder="Cantidad"
@@ -57,7 +59,7 @@ const App = () => {
         {gastos.map((gasto, index) => (
           <li key={index}>
             {gasto.nombre}: ${gasto.cantidad}
-            <button onClick={() => handleDelete(index)}>Eliminar</button>
+            <button className='eliminar' onClick={() => handleDelete(index)}>Eliminar</button>
           </li>
         ))}
       </ul>
