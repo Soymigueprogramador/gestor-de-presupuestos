@@ -57,6 +57,7 @@ ul, li {
   list-style: none;
   text-align: center;
   color: #fff;
+  margin-top: 30px;
 }
 
 /* Para una tablet */ 
@@ -119,6 +120,7 @@ ul, li {
   list-style: none;
   text-align: center;
   color: #fff;
+  margin-top: 20px;
 }
 
 /* Para un celular */
@@ -181,4 +183,5 @@ ul, li {
   list-style: none;
   text-align: center;
   color: #fff;
+  margin-top: 10px;
 }
